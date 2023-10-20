@@ -28,6 +28,11 @@ const AdminLayout = () => {
     },
   ];
 
+  const handleSubmit = () => {
+    // send data through database
+    return '';
+  };
+
   /*
    page should contain following elements: 
    button -> create post (placeholder: create)
@@ -39,7 +44,7 @@ const AdminLayout = () => {
     <Layout>
       <div>
         <div>
-          <Modal modalId='' />
+          <Modal modalId='' onSubmit={handleSubmit} />
         </div>
         <div>list of all posts</div>
       </div>
